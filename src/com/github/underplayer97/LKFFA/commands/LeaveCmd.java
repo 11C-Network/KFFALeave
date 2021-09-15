@@ -1,4 +1,4 @@
-package com.github.underplayer97.LSky.commands;
+package com.github.underplayer97.LKFFA.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.github.underplayer97.LSky.Main;
-import com.github.underplayer97.LSky.utils.Utils;
+import com.github.underplayer97.LKFFA.Main;
+import com.github.underplayer97.LKFFA.utils.Utils;
 
 
 public class LeaveCmd implements CommandExecutor{
@@ -29,9 +29,9 @@ public class LeaveCmd implements CommandExecutor{
 		
 		Player p = (Player) sender;
 		
-		if (p.hasPermission("LSky.Leave")) {
+		if (p.hasPermission("KFFA.Leave")) {
 			 {
-				 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "server skywars");
+				 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "server kffa");
 				return true;
 		}}
 				
